@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>G.CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.0.0/dist/siimple.min.css">
+    <link rel="stylesheet" type="text/css" href="../g.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+      * {
+        transition: 0.2s all ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent" class="row">
+    </div>
+    <script>
+      var gradients = [
+        "gcss-warm-flame",
+        "gcss-night-fade",
+        "gcss-spring-warmth",
+        "gcss-juicy-peach",
+        "gcss-young-passion",
+        "gcss-lady-lips",
+        "gcss-sunny-morning",
+        "gcss-rainy-ashville",
+        "gcss-frozen-dreams",
+        "gcss-winter-neva",
+        "gcss-dusty-grass",
+        "gcss-tempting-azure",
+        "gcss-heavy-rain",
+        "gcss-army-crisp",
+        "gcss-mean-fruit",
+        "gcss-deep-blue",
+        "gcss-ripe-malinka",
+        "gcss-cloudy-knoxville",
+        "gcss-malibu-beach",
+        "gcss-new-life",
+        "gcss-true-sunset",
+        "gcss-morpheus-den",
+        "gcss-rare-wind",
+        "gcss-near-moon",
+        "gcss-wild-apple",
+        "gcss-saint-petersburg",
+        "gcss-arielles-smile",
+        "gcss-plum-plate",
+        "gcss-everlasting-sky",
+        "gcss-happy-fisher",
+        "gcss-blessing",
+        "gcss-sharpeye-eagle",
+        "gcss-ladoga-bottom",
+        "gcss-lemon-gate",
+        "gcss-itmeo-branding",
+        "gcss-zeus-miracle",
+        "gcss-old-hat",
+        "gcss-star-wine",
+        "gcss-deep-blue-2",
+        "gcss-coup-de-grace",
+        "gcss-happy-acid",
+        "gcss-awesome-pine",
+        "gcss-new-york",
+        "gcss-shy-rainbow",
+        "gcss-loon-crest",
+        "gcss-mixed-hopes",
+        "gcss-fly-high",
+        "gcss-strong-bliss",
+        "gcss-fresh-milk",
+        "gcss-snow-again",
+        "gcss-february-ink",
+        "gcss-kind-steel",
+        "gcss-soft-grass",
+        "gcss-grown-early",
+        "gcss-sharp-blues",
+        "gcss-shady-water",
+        "gcss-dirty-beauty",
+        "gcss-great-whale",
+        "gcss-teen-notebook",
+        "gcss-polite-rumors",
+        "gcss-sweet-period",
+        "gcss-wide-matrix",
+        "gcss-soft-cherish",
+        "gcss-red-salvation",
+        "gcss-burning-spring",
+        "gcss-night-party",
+        "gcss-sky-glider",
+        "gcss-heaven-peach",
+        "gcss-purple-division",
+        "gcss-aqua-splash",
+        "gcss-above-clouds",
+        "gcss-spiky-naga",
+        "gcss-love-kiss",
+        "gcss-sharp-glass",
+        "gcss-clean-mirror",
+        "gcss-premium-dark",
+        "gcss-cold-evening",
+        "gcss-cochiti-lake",
+        "gcss-summer-games",
+        "gcss-passionate-bed",
+        "gcss-mountain-rock",
+        "gcss-desert-hump",
+        "gcss-jungle-day",
+        "gcss-phoenix-start",
+        "gcss-october-silence",
+        "gcss-over-sun",
+        "gcss-premium-white",
+        "gcss-mars-party",
+        "gcss-eternal-constance",
+        "gcss-japan-blush",
+        "gcss-smiling-rain",
+        "gcss-cloudy-apple",
+        "gcss-big-mango",
+        "gcss-healthy-water",
+        "gcss-amour-amour",
+        "gcss-risky-concrete",
+        "gcss-strong-stick",
+        "gcss-vicious-stance",
+        "gcss-palo-alto",
+        "gcss-happy-memories",
+        "gcss-midnight-bloom",
+        "gcss-crystalline",
+        "gcss-raccoon-back",
+        "gcss-party-bliss",
+        "gcss-confident-cloud"
+      ]
+      var parent = document.getElementById('parent')
+      for(let i = 0; i < gradients.length; i++) {
+        let div = document.createElement('div')
+        let br = document.createElement('hr')
+        div.className = 'col col-12'
+        div.style.padding = '1%'
+        let card = document.createElement('div')
+        card.className = 'card'
+        let cardBody = document.createElement('div')
+        cardBody.style.height = '100vh'
+        cardBody.style.width = '100vw'
+        card.appendChild(cardBody)
+        cardBody.className = 'card-body ' + gradients[i]
+        cardBody.innerHTML = gradients[i]
+        div.appendChild(card)
+        parent.appendChild(div)
+        parent.appendChild(br)
+        parent.appendChild(br)
+      }
+    </script>
+  </body>
+</html>
