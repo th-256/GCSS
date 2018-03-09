@@ -8,12 +8,12 @@ GCSS is a CSS library with more than 100 gradients.
 ### Installation
 Paste following in the ``<head>`` tag of your document.
 ```html
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/xt0r/GCSS/master/g.css">
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/th-256/GCSS/master/g.csss">
 ```
 ### Usage
 Just add the classname of the gradient you wan't to use to your element.
 
-(You can find all classnames at https://xt0r.github.io/GCSS/docs/)
+(You can find all classnames at https://th-256.github.io/GCSS/docs/)
 
 ### Example
 ```html
